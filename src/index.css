@@ -1,13 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Styles for Header Component */
+.header-container {
+  background-color: #eadcf9; /* Equivalent to bg-purple-100 */
+}
+
+.header-subtitle {
+  color: #4b5563; /* Equivalent to text-gray-600 */
+}
+
+.header-title {
+  color: #000; /* Adjust as needed */
+}
+
+.header-image {
+  margin-right: 1.25rem; /* Equivalent to mr-5 */
+  border-radius: 0.5rem; /* Equivalent to rounded-lg */
+}
+
+@media (min-width: 768px) {
+  .header-image {
+    margin-right: 5rem; /* Equivalent to mr-20 */
+  }
+}
+
+.header-image-border {
+  border-color: #fcf5ef; /* Equivalent to border-orange-50 */
+}
+
+/* Styles for Ahead Component */
+.ahead-container {
+  background-color: #fff6ee; /* Equivalent to bg-orange-50 */
+  border-color: #fcf5ef; /* Equivalent to border-orange-50 */
+}
+
+.ahead-subtitle {
+  color: #4b5563; /* Equivalent to text-gray-600 */
+}
+
+.ahead-title {
+  color: #000; /* Adjust as needed */
+}
+
+.ahead-image {
+  margin-right: 0; /* Ensures the image is not right-aligned */
+  border-radius: 0.5rem; /* Equivalent to rounded-lg */
+}
+
+.ahead-image-border {
+  border-color: #fff7ed; /* Equivalent to border-orange-50 */
+}
+
+.ahead-text {
+  color: #4b5563; /* Equivalent to text-gray-600 */
+}
+
+@layer components {
+  .bg-off-white {
+    @apply bg-gray-100;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.scroll-animation {
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+.scroll-animation-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.scroll-animation-delay-2 {
+  animation-delay: 0.4s;
+}
+
+.scroll-animation-delay-3 {
+  animation-delay: 0.6s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  /* Styles for Header Component */
+  .header-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .header-image {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  /* Styles for Ahead Component */
+  .ahead-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
