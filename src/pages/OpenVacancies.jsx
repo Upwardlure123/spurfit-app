@@ -17,6 +17,9 @@ const OpenVacancies = () => {
                   <li>Full-time position</li>
                   <li>Berlin or remote</li>
                   <li>€65-85k, 0.5-1.50% equity share options</li>
+                  <button className="bg-black text-white rounded-full px-2 py-2 mt-5 transform transition-transform duration-300 hover:scale-105">
+                    See details
+                  </button>
                 </ul>
               </div>
               <div className="bg-yellow-50 p-6 rounded-3xl">
@@ -25,6 +28,9 @@ const OpenVacancies = () => {
                   <li>Full-time position</li>
                   <li>Berlin or remote</li>
                   <li>€40-55k, 0.25-0.50% equity share options</li>
+                  <button className="bg-black text-white rounded-full px-2 py-2 mt-5 transform transition-transform duration-300 hover:scale-105">
+                    See details
+                  </button>
                 </ul>
               </div>
               <div className="bg-yellow-50 p-6 rounded-3xl">
@@ -33,6 +39,9 @@ const OpenVacancies = () => {
                   <li>Full-time position</li>
                   <li>Berlin or remote</li>
                   <li>€20-24k, 0.5-1.50% equity share options</li>
+                  <button className="bg-black text-white rounded-full px-2 py-2 mt-5 transform transition-transform duration-300 hover:scale-105">
+                    See details
+                  </button>
                 </ul>
               </div>
             </div>
@@ -70,7 +79,7 @@ const OpenVacancies = () => {
             </div>
             <a
               href="https://www.apple.com/app-store/"
-              className="bg-black text-white py-2 px-4 rounded-lg inline-flex items-center"
+              className="text-white py-2 px-4 rounded-lg inline-flex items-center"
             >
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
